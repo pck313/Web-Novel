@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NovelWeb - Trang chủ</title>
+    <style>
+        html, body {
+            overflow-x: hidden;
+            overflow-y: auto;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #FCEAB5;
+            box-sizing: border-box;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+        }
+
+        .header {
+            background-color: #EC3323;
+            color: #fff;
+            padding: 10px 0;
+            width: 100%;
+            text-align: center;
+        }
+
+        .logo-text {
+            font-size: 50px;
+            font-weight: bold;
+            margin: 0;
+        }
+
+        .top-bar {
+            background-color: #F18833;
+            color: #fff;
+            padding: 10px 0;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            width: 100%;
+            position: relative;
+        }
+
+        .center {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-grow: 1;
+        }
+
+        .account-link {
+            position: absolute;
+            right: 100px;
+            top: 85px;
+            transform: translateY(-50%);
+            display: flex;
+            align-items: center;
+            margin-right: 45px;
+        }
+
+        .account-link img {
+            width: 20px;
+            margin-right: 5px;
+        }
+
+        .search-bar {
+            display: flex;
+            align-items: center;
+            background-color: white;
+            border-radius: 5px;
+            padding: 5px;
+        }
+
+        .search-input {
+            border: none;
+            border-radius: 5px;
+            height: 30px;
+            flex-grow: 1;
+            padding: 0 10px;
+        }
+
+        .search-button {
+            background-color: #fff;
+            border: none;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+        }
+
+        .search-button img {
+            width: 30px;
+        }
+
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 110px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            top: 100%;
+            z-index: 1;
+            overflow: hidden;
+            white-space: nowrap;
+        }
+
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+
+        .dropdown-content a:hover {
+            background-color: #f1f1f1;
+        }
+
+        .account-link:hover .dropdown-content {
+            display: block;
+        }
+
+        .navigation-bar {
+            background-color: #F18833;
+            color: #fff;
+            padding: 10px 0;
+            display: flex;
+            justify-content: space-around;
+            width: 100%;
+        }
+
+        .navigation-bar a {
+            color: #fff;
+            text-decoration: none;
+            padding: 10px;
+            font-size: 16px;
+        }
+
+        .navigation-bar a:hover {
+            background-color: #ffac59;
+            border-radius: 5px;
+        }
+
+        .home-icon {
+            width: 35px;
+            vertical-align: middle;
+        }
+
+        .content {
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        .story {
+            display: inline-block;
+            width: 17%;
+            margin: 10px;
+            text-align: center;
+        }
+
+        .story a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        .story img {
+            width: 200px;
+            height: 300px;
+            border-radius: 10px;
+        }
+
+        .story p {
+            margin-top: 10px;
+            font-size: 16px;
+            color: #000;
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            width: 100%;
+            position: relative;
+            margin-top: auto;
+        }
+
+        .rectangle-line {
+            background-color: #fee9cf;
+            width: 100%;
+            position: relative;
+            z-index: 1;
+            margin-top: 2px;
+        }
+    </style>
+</head>
+<body>
+<div class="header">
+    <span class="logo-text">NovelWeb</span>
+</div>
+<header class="top-bar">
+    <div class="container">
+        <div class="center">
+            <div class="search-bar">
+                <input type="text" placeholder="Tìm kiếm tên truyện..." class="search-input">
+                <button class="search-button"><img src="https://icon-library.com/images/search-icon-white/search-icon-white-27.jpg" alt="Search"></button>
+            </div>
+        </div>
+    </div>
+    <span class="account-link">
+        <img src="https://raw.githubusercontent.com/pck313/ImageWeb/refs/heads/main/userlogo.png" alt="User Icon">
+        Tài khoản
+        <div class="dropdown-content">
+            <a href="/login">Đăng nhập</a>
+            <a href="/register">Đăng ký</a>
+        </div>
+    </span>
+</header>
+
+<div class="rectangle-line"></div>
+
+<nav class="navigation-bar">
+    <div class="container">
+        <a href="/"><img src="https://icon-library.com/images/home-icon-white/home-icon-white-7.jpg" alt="Trang chủ" class="home-icon"></a>
+        <a href="/history">Lịch sử</a>
+        <a href="/genres">Thể loại</a>
+        <a href="/search">Tìm truyện</a>
+    </div>
+</nav>
+<main class="content">
+    <div class="container">
+        <div class="story">
+            <a href="/story1">
+                <img src="https://raw.githubusercontent.com/pck313/ImageWeb/refs/heads/main/CoverBook/Black%20Flag.jpg" alt="Black Flag">
+                <p>Black Flag</p>
+            </a>
+        </div>
+        <div class="story">
+            <a href="/story2">
+                <img src="https://raw.githubusercontent.com/pck313/ImageWeb/refs/heads/main/CoverBook/B%C3%AAn%20ngo%C3%A0i%20h%E1%BA%A7m%20ng%E1%BB%A5c%20r%E1%BA%A5t%20nguy%20hi%E1%BB%83m.jpg" alt="Bên ngoài hầm ngục">
+                <p>Bên ngoài hầm ngục</p>
+            </a>
+        </div>
+        <div class="story">
+            <a href="/story3">
+                <img src="https://raw.githubusercontent.com/pck313/ImageWeb/refs/heads/main/CoverBook/Chiyu%20Mahou%20no%20Machigatta.jpg" alt="Chiyu Mahou no Machigatta">
+                <p>Chiyu Mahou no Machigatta</p>
+            </a>
+        </div>
+        <div class="story">
+            <a href="/story4">
+                <img src="https://raw.githubusercontent.com/pck313/ImageWeb/refs/heads/main/CoverBook/Comic%20Hacker%20Spider%20man.jpg" alt="Comic Hacker Spider man">
+                <p>Comic Hacker Spider man</p>
+            </a>
+        </div>
+        <div class="story">
+            <a href="/story5">
+                <img src="https://raw.githubusercontent.com/pck313/ImageWeb/refs/heads/main/CoverBook/Fairy%20Tail.jpg" alt="Fairy Tail">
+                <p>Fairy Tail</p>
+            </a>
+        </div>
+        <div class="story">
+            <a href="/story6">
+                <img src="https://raw.githubusercontent.com/pck313/ImageWeb/refs/heads/main/CoverBook/I%20got%20a%20new%20skill%20every.jpg" alt="New skill everyday">
+                <p>New skill everyday</p>
+            </a>
+        </div>
+        <div class="story">
+            <a href="/story7">
+                <img src="https://raw.githubusercontent.com/pck313/ImageWeb/refs/heads/main/CoverBook/Maria%20from%20hell.jpg" alt="Maria from hell">
+                <p>Maria from hell</p>
+            </a>
+        </div>
+        <div class="story">
+            <a href="/story8">
+                <img src="https://raw.githubusercontent.com/pck313/ImageWeb/refs/heads/main/CoverBook/Ng%C3%B4i%20nh%C3%A0%20qu%E1%BB%B7%20d%E1%BB%8B.jpg" alt="Ngôi nhà quỷ dị">
+                <p>Ngôi nhà quỷ dị</p>
+            </a>
+        </div>
+        <div class="story">
+            <a href="/story9">
+                <img src="https://raw.githubusercontent.com/pck313/ImageWeb/refs/heads/main/CoverBook/Ng%C6%B0%E1%BB%9Di%20tr%C3%B9ng%20sinh%20qu%C3%A1%20d%C3%A0y%20%C4%91%E1%BA%B7c.jpg" alt="Người trùng sinh">
+                <p>Người trùng sinh</p>
+            </a>
+        </div>
+        <div class="story">
+            <a href="/story10">
+                <img src="https://raw.githubusercontent.com/pck313/ImageWeb/refs/heads/main/CoverBook/N%C4%83ng%20l%E1%BB%B1c%20c%E1%BB%A7a%20ta%20l%C3%A0%20s%E1%BB%ADa%20ch%E1%BB%AFa%20v%C4%83n%20t%E1%BB%B1%20mi%C3%AAu%20t%E1%BA%A3.jpg" alt="Năng lực của ta">
+                <p>Năng lực của ta</p>
+            </a>
+        </div>
+        <div class="story">
+            <a href="/story11">
+                <img src="https://raw.githubusercontent.com/pck313/ImageWeb/refs/heads/main/CoverBook/Persona%20x%20Tantei%20naoto.jpg" alt="Persona x Tantei naoto">
+                <p>Persona x Tantei naoto</p>
+            </a>
+        </div>
+        <div class="story">
+            <a href="/story12">
+                <img src="https://raw.githubusercontent.com/pck313/ImageWeb/refs/heads/main/CoverBook/Qu%E1%BB%B7%20d%E1%BB%8B%20mau.jpg" alt="Quỷ dị">
+                <p>Quỷ dị</p>
+            </a>
+        </div>
+        <div class="story">
+            <a href="/story13">
+                <img src="https://raw.githubusercontent.com/pck313/ImageWeb/refs/heads/main/CoverBook/Sekai%20Saiko%20no%20Ansatsusha.jpg" alt="Sekai Saiko no Ansatsusha">
+                <p>Sekai Saiko no Ansatsusha</p>
+            </a>
+        </div>
+        <div class="story">
+            <a href="/story14">
+                <img src="https://raw.githubusercontent.com/pck313/ImageWeb/refs/heads/main/CoverBook/Th%C3%A2m%20h%E1%BA%A3i%20m%C3%AA%20%C4%91%E1%BB%93.jpg" alt="Thám hiểm mê đồ">
+                <p>Thám hiểm mê đồ</p>
+            </a>
+        </div>
+        <div class="story">
+            <a href="/story15">
+                <img src="https://raw.githubusercontent.com/pck313/ImageWeb/refs/heads/main/CoverBook/T%C3%A0u%20ma%20v%C3%A0%20m%E1%BA%ADn%20ng%E1%BB%8Dt.jpg" alt="Tàu ma và mận ngọt">
+                <p>Tàu ma và mận ngọt</p>
+            </a>
+        </div>
+        <div class="story">
+            <a href="/story16">
+                <img src="https://raw.githubusercontent.com/pck313/ImageWeb/refs/heads/main/CoverBook/V%E1%BB%91n%20d%C4%A9%20t%C3%B4i%20ch%E1%BB%89%20l%C3%A0%20nh%C3%A2n%20v%E1%BA%ADt%20ph%E1%BB%A5.jpg" alt="Vốn dĩ tôi chỉ là nhân vật phụ">
+                <p>Vốn dĩ tôi chỉ là nhân vật phụ</p>
+            </a>
+        </div>
+        <div class="story">
+            <a href="/story17">
+                <img src="https://raw.githubusercontent.com/pck313/ImageWeb/refs/heads/main/CoverBook/%C4%90%E1%BA%A5u%20la%20Tu%20huy%E1%BB%81n%20qu%C3%A2n%20th%E1%BA%A5t%20ch%C6%B0%C6%A1ng.jpg" alt="Đấu la Tu huyền">
+                <p>Đấu la Tu huyền</p>
+            </a>
+        </div>
+        <div class="story">
+            <a href="/story18">
+                <img src="https://raw.githubusercontent.com/pck313/ImageWeb/refs/heads/main/CoverBook/%C4%90%E1%BA%A5u%20ph%C3%A1.jpg" alt="Đấu phá">
+                <p>Đấu phá</p>
+            </a>
+        </div>
+        <div class="story">
+            <a href="/story19">
+                <img src="https://raw.githubusercontent.com/pck313/ImageWeb/refs/heads/main/CoverBook/%C4%90%E1%BA%BFn%20t%E1%BB%AB%20t%E1%BA%ADn%20th%E1%BA%BF.jpg" alt="Đến từ tận thế">
+                <p>Đến từ tận thế</p>
+            </a>
+        </div>
+        <div class="story">
+            <a href="/story20">
+                <img src="https://raw.githubusercontent.com/pck313/ImageWeb/refs/heads/main/CoverBook/Campfire%20Cooking%20Another%20World.jpg" alt="Campfire Cooking">
+                <p>Campfire Cooking</p>
+            </a>
+        </div>
+    </div>
+</main>
+
+<footer>
+    <div class="container">
+        <p>Liên hệ:</p>
+        <p>SĐT: 0363xxxxxx</p>
+        <p>Email: 23021596@vnu.edu.vn</p>
+        <p>&copy; 2024 NovelWeb. All rights reserved.</p>
+    </div>
+</footer>
+</body>
+</html>
