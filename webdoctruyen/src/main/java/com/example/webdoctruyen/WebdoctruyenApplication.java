@@ -1,4 +1,4 @@
-package com.example.webdoctruyen;
+epackage com.example.webdoctruyen;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
