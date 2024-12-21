@@ -5,7 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a51252ee-f82c-423f-bdc7-b7a2265f2cf9" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/webdoctruyen/src/main/java/com/example/webdoctruyen/WebdoctruyenApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/webdoctruyen/src/main/java/com/example/webdoctruyen/WebdoctruyenApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/webdoctruyen/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/webdoctruyen/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,10 +40,11 @@
   "keyToString": {
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
-    "com.google.cloudcode.ide_session_index": "20241221_0004",
+    "com.google.cloudcode.ide_session_index": "20241221_0009",
     "git-widget-placeholder": "main",
+    "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "D:/Web-Novel",
+    "last_opened_file_path": "D:/Web-Novel/webdoctruyen",
     "nodejs_package_manager_path": "npm",
     "vue.rearranger.settings.migration": "true"
   }
@@ -79,6 +81,9 @@
       <workItem from="1734749152243" duration="45000" />
       <workItem from="1734749685927" duration="78000" />
       <workItem from="1734749799301" duration="11000" />
+      <workItem from="1734749964685" duration="10000" />
+      <workItem from="1734750028175" duration="21000" />
+      <workItem from="1734750099735" duration="45000" />
     </task>
     <servers />
   </component>

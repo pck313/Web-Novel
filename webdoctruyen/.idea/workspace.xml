@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="51b85fde-ea68-414d-b1ed-1f1c7f5ce016" name="Changes" comment="" />
+    <list default="true" id="51b85fde-ea68-414d-b1ed-1f1c7f5ce016" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -42,7 +45,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
     "Spring Boot.WebdoctruyenApplication.executor": "Run",
-    "com.google.cloudcode.ide_session_index": "20241221_0003",
+    "com.google.cloudcode.ide_session_index": "20241221_0005",
     "git-widget-placeholder": "main",
     "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
@@ -55,7 +58,15 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Spring Boot.WebdoctruyenApplication">
+    <configuration name="WebdoctruyenApplication (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
+      <module name="webdoctruyen" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="WebdoctruyenApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="WebdoctruyenApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
       <module name="webdoctruyen" />
@@ -83,6 +94,7 @@
       <updated>1734749197156</updated>
       <workItem from="1734749198277" duration="438000" />
       <workItem from="1734749648982" duration="36000" />
+      <workItem from="1734749976881" duration="50000" />
     </task>
     <servers />
   </component>
