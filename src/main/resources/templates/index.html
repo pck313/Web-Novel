@@ -220,8 +220,8 @@
         <img src="https://raw.githubusercontent.com/pck313/ImageWeb/refs/heads/main/userlogo.png" alt="User Icon">
         Tài khoản
         <div class="dropdown-content">
-            <a href="/login">Đăng nhập</a>
-            <a href="/register">Đăng ký</a>
+            <a href="login.html">Đăng nhập</a>
+            <a href="register.html">Đăng ký</a>
         </div>
     </span>
 </header>
@@ -230,16 +230,16 @@
 
 <nav class="navigation-bar">
     <div class="container">
-        <a href="/"><img src="https://icon-library.com/images/home-icon-white/home-icon-white-7.jpg" alt="Trang chủ" class="home-icon"></a>
-        <a href="/history">Lịch sử</a>
-        <a href="/genres">Thể loại</a>
-        <a href="/search">Tìm truyện</a>
+        <a href="index.html"><img src="https://icon-library.com/images/home-icon-white/home-icon-white-7.jpg" alt="Trang chủ" class="home-icon"></a>
+        <a href="history.html">Lịch sử</a>
+        <a href="genres.html">Thể loại</a>
+        <a href="searchhtml">Tìm truyện</a>
     </div>
 </nav>
 <main class="content">
     <div class="container">
         <div class="story">
-            <a href="/story1">
+            <a href="blackflag.html">
                 <img src="https://raw.githubusercontent.com/pck313/ImageWeb/refs/heads/main/CoverBook/Black%20Flag.jpg" alt="Black Flag">
                 <p>Black Flag</p>
             </a>
@@ -360,6 +360,28 @@
         </div>
     </div>
 </main>
+
+<script>
+    function addToHistory(title, image, url) {
+        var history = JSON.parse(localStorage.getItem('history')) || [];
+        // Kiểm tra xem truyện đã tồn tại trong lịch sử chưa
+        if (!history.some(item => item.url === url)) {
+            history.push({ title: title, image: image, url: url });
+            localStorage.setItem('history', JSON.stringify(history));
+        }
+    }
+
+    // Ví dụ sử dụng: gọi addToHistory khi người dùng nhấn vào truyện
+    document.querySelectorAll('.story-item').forEach(function(item) {
+        item.addEventListener('click', function() {
+            var title = this.getAttribute('data-title');
+            var image = this.getAttribute('data-image');
+            var url = this.getAttribute('data-url');
+            addToHistory(title, image, url);
+        });
+    });
+</script>
+
 
 <footer>
     <div class="container">
