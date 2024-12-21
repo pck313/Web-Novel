@@ -4,8 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="51b85fde-ea68-414d-b1ed-1f1c7f5ce016" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="a51252ee-f82c-423f-bdc7-b7a2265f2cf9" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/webdoctruyen/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/webdoctruyen/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -13,7 +13,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GitHubPullRequestSearchHistory">{
   &quot;lastFilter&quot;: {
@@ -28,51 +28,37 @@
   }
 }</component>
   <component name="ProjectColorInfo">{
-  &quot;associatedIndex&quot;: 2
+  &quot;associatedIndex&quot;: 3
 }</component>
-  <component name="ProjectId" id="2qVYQyYAq1T8CxQ9Z1BP0t6w8lK" />
+  <component name="ProjectId" id="2qVYKnSgPwFeSxcZcwN91Oxh2rL" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
-    "Spring Boot.WebdoctruyenApplication.executor": "Run",
-    "com.google.cloudcode.ide_session_index": "20241221_0009",
+    "com.google.cloudcode.ide_session_index": "20241221_0011",
     "git-widget-placeholder": "main",
     "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "D:/Web-Novel",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
+    "last_opened_file_path": "D:/Web-Novel/webdoctruyen",
     "nodejs_package_manager_path": "npm",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
-  <component name="RunManager" selected="Spring Boot.WebdoctruyenApplication">
-    <configuration name="WebdoctruyenApplication (1)" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
-      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
-      <module name="webdoctruyen" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="WebdoctruyenApplication" />
+  <component name="RunManager">
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name="Web-Novel" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="WebdoctruyenApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
-      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
-      <module name="webdoctruyen" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.webdoctruyen.WebdoctruyenApplication" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name="Web-Novel" />
+      <option name="filePath" />
+      <method v="2" />
     </configuration>
   </component>
   <component name="SharedIndexes">
@@ -86,16 +72,18 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="51b85fde-ea68-414d-b1ed-1f1c7f5ce016" name="Changes" comment="" />
-      <created>1734749197156</created>
+      <changelist id="a51252ee-f82c-423f-bdc7-b7a2265f2cf9" name="Changes" comment="" />
+      <created>1734749147838</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1734749197156</updated>
-      <workItem from="1734749198277" duration="438000" />
-      <workItem from="1734749648982" duration="36000" />
-      <workItem from="1734749976881" duration="50000" />
-      <workItem from="1734750145833" duration="111000" />
-      <workItem from="1734750268667" duration="20000" />
+      <updated>1734749147838</updated>
+      <workItem from="1734749152243" duration="45000" />
+      <workItem from="1734749685927" duration="78000" />
+      <workItem from="1734749799301" duration="11000" />
+      <workItem from="1734749964685" duration="10000" />
+      <workItem from="1734750028175" duration="21000" />
+      <workItem from="1734750099735" duration="45000" />
+      <workItem from="1734750289697" duration="47000" />
     </task>
     <servers />
   </component>
