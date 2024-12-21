@@ -9,5 +9,4 @@ public class WebdoctruyenApplication {
     public static void main(String[] args) {
         SpringApplication.run(WebdoctruyenApplication.class, args);
     }
-
 }
