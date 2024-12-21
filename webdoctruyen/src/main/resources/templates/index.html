@@ -364,7 +364,6 @@
 <script>
     function addToHistory(title, image, url) {
         var history = JSON.parse(localStorage.getItem('history')) || [];
-        // Kiểm tra xem truyện đã tồn tại trong lịch sử chưa
         if (!history.some(item => item.url === url)) {
             history.push({ title: title, image: image, url: url });
             localStorage.setItem('history', JSON.stringify(history));
