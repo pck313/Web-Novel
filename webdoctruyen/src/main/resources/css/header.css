@@ -23,11 +23,11 @@ body {
 .header {
     background-color: #EC3323;
     color: #fff;
-    padding: 3px 0;
+    padding: 2px 0;
     width: 100%;
     text-align: center;
-    top: 0;
-    position: fixed;
+    top: 0px;
+    position: sticky;
 }
 
 .logo-text {
@@ -39,12 +39,10 @@ body {
 .top-bar {
     background-color: #F18833;
     color: #fff;
-    padding: 5px 0;
-    display: flex;
-    align-items: center;
+    padding: 5px;
     width: 100%;
-    position: fixed;
-    top: 40px;
+    position: sticky;
+    top: 38px;
 }
 
 .center {
@@ -56,11 +54,13 @@ body {
 
 .account-link {
     position: fixed;
-    right: 100px;
-    top: 105px;
+    right: 150px;
+    top: 113px;
+    transform: translateY(-50%);
     display: flex;
     align-items: center;
     margin-right: 45px;
+    color: white;
 }
 
 .account-link img {
@@ -109,13 +109,13 @@ body {
     box-shadow: 0 1px 8px 0 rgba(0,0,0,0.2);
     top: 100%;
     overflow: hidden;
+    border-radius: 5px;
     white-space: nowrap;
-    z-index: 3;
 }
 
 .dropdown-content a {
     color: black;
-    padding: 7px 15px;
+    padding: 8px 15px;
     text-decoration: none;
     display: block;
 }
@@ -131,14 +131,14 @@ body {
 .navigation-bar {
     background-color: #F18833;
     color: #fff;
-    padding: 5px;
+    padding: 3px;
     width: 100%;
-    position: fixed;
-    top: 95px
+    position: sticky;
+    top: 95px;
 }
 
 .navigation-bar a {
-    margin: 0 25px;
+    margin: 0 20px;
     border-radius: 5px;
     color: #fff;
     text-decoration: none;
