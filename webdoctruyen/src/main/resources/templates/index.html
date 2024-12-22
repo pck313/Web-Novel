@@ -6,6 +6,7 @@
     <title>Trang chủ - NovelWeb</title>
     <link rel="stylesheet" href="/css/header.css">
     <link rel="stylesheet" href="/css/index.css">
+    <script src="/function/search.js" defer></script>
 </head>
 <body>
 <div class="header">
@@ -16,7 +17,7 @@
     <div class="container">
         <div class="center">
             <div class="search-bar">
-                <input type="text" id="search-input" placeholder="Tìm kiếm tên truyện..." class="search-input">
+                <input type="text" id="search-input" placeholder="Tìm kiếm tên truyện..." class="search-input" oninput="searchImage()">
                 <button class="search-button" aria-label="Search"><img src="https://cdn.pixabay.com/photo/2015/12/08/17/38/magnifying-glass-1083373_640.png" alt="Search"></button>
             </div>
         </div>
