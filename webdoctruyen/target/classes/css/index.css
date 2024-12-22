@@ -1,0 +1,40 @@
+html, body {
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+body {
+    background-color: #FCEAB5;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.content {
+    margin-top: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.story {
+    width: 15%;
+    text-align: center;
+    margin: 13px;
+}
+
+.story a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.story img {
+    width: 210px;
+    height: 300px;
+    border-radius: 10px;
+}
+
+.story p {
+    margin-top: 6px;
+    font-size: 16px;
+    color: #000;
+}
