@@ -1,0 +1,105 @@
+html, body {
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: #FCEAB5;
+}
+
+.frame {
+    background-color: #FCF0CD;
+    width: 60%;
+    border-radius: 10px;
+    margin-top: 20px;
+    justify-content: center;
+}
+
+.content {
+    padding: 60px 0;
+    width: 100%;
+}
+
+.book-details {
+    display: contents;
+    margin-bottom: 20px;
+}
+
+.book-cover img {
+    width: 252px;
+    height: 360px;
+    border-radius: 10px;
+}
+
+.book-info {
+    width: 100%;
+}
+
+.book-info h2 {
+    margin: 10px 0 0 40px;
+}
+
+.book-info .metadata {
+    margin: 20px 0 0 40px;
+}
+
+.book-info .metadata span {
+    display: block;
+}
+
+.book-info .rating {
+    margin: 20px 0 0 40px;
+    display: flex;
+    align-items: center;
+}
+
+.book-info .rating span {
+    margin-right: 0px;
+}
+
+.book-info .description {
+    margin: 20px 0 0 40px;
+    text-align: justify;
+}
+
+.chapter-frame {
+    background-color: #fff8e7;
+    border-radius: 10px;
+    width: 80%;
+    margin: 20px auto;
+    padding: 20px;
+}
+
+.chapter-list {
+    position: sticky;
+}
+
+.chapter-list h3 {
+    margin-bottom: 10px;
+}
+
+.chapter-list ul {
+    list-style: none;
+    padding: 0px;
+}
+
+.chapter-list ul li {
+    margin-bottom: 10px;
+}
+
+.chapter-list ul li a {
+    color: #EC3323;
+    text-decoration: none;
+}
+
+.comments-section {
+    margin: 20px 0 20px 0;
+    background-color: #fff9;
+    border-radius: 10px;
+    width: 60%;
+}
+
+.comments-text {
+    margin: 20px 20px 20px 20px;
+    width: 60%;
+}
