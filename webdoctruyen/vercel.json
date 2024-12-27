@@ -4,6 +4,6 @@
   ],
   "builds": [
     { "src": "src/main/resources/templates/index.html", "use": "@vercel/static" },
-    { "src": "src/main/resources/css/*", "use": "@vercel/static" }
+    { "src": "src/main/resources/css/index.css", "use": "@vercel/static" }
   ]
 }
