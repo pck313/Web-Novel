@@ -1,0 +1,39 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "src/main/resources/templates/*.html",
+      "use": "@vercel/static-build"
+    },
+    {
+      "src": "src/main/resources/php/*.php",
+      "use": "@vercel/php"
+    },
+    {
+      "src": "src/main/resources/function/*.js",
+      "use": "@vercel/node"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/",
+      "dest": "/src/main/resources/templates/index.html"
+    },
+    {
+      "src": "/api/(.*)",
+      "dest": "/src/main/resources/php/$1.php"
+    },
+    {
+      "src": "/function/(.*)",
+      "dest": "/src/main/resources/function/$1"
+    },
+    {
+      "src": "/homepage/(.*).html",
+      "dest": "/src/main/resources/homepage/$1.html"
+    },
+    {
+      "src": "/(.*).html",
+      "dest": "/src/main/resources/templates/$1.html"
+    }
+  ]
+}
