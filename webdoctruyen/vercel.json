@@ -3,6 +3,6 @@
     { "source": "/", "destination": "/src/main/resources/templates/index.html" }
   ],
   "builds": [
-    { "src": "src/main/resources/templates/footer.html", "use": "@vercel/static" }
+    { "src": "src/main/resources/templates/index.html", "use": "@vercel/static" }
   ]
 }
