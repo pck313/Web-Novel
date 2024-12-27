@@ -1,31 +1,8 @@
 {
-  "version": 2,
-  "builds": [
-    {
-      "src": "src/main/resources/templates/*.html",
-      "use": "@vercel/static-build"
-    },
-    {
-      "src": "src/main/resources/function/*.js",
-      "use": "@vercel/node"
-    }
+  "rewrites": [
+    { "source": "/", "destination": "/src/main/resources/templates/index.html" }
   ],
-  "routes": [
-    {
-      "src": "/",
-      "dest": "/src/main/resources/templates/index.html"
-    },
-    {
-      "src": "/function/(.*)",
-      "dest": "/src/main/resources/function/$1"
-    },
-    {
-      "src": "/homepage/(.*).html",
-      "dest": "/src/main/resources/homepage/$1.html"
-    },
-    {
-      "src": "/(.*).html",
-      "dest": "/src/main/resources/templates/$1.html"
-    }
+  "builds": [
+    { "src": "src/main/resources/templates/index.html", "use": "@vercel/static" }
   ]
 }
