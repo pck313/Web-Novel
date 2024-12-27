@@ -6,10 +6,6 @@
       "use": "@vercel/static-build"
     },
     {
-      "src": "src/main/resources/php/*.php",
-      "use": "@vercel/php"
-    },
-    {
       "src": "src/main/resources/function/*.js",
       "use": "@vercel/node"
     }
