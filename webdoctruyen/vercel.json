@@ -16,10 +16,6 @@
       "dest": "/src/main/resources/templates/index.html"
     },
     {
-      "src": "/api/(.*)",
-      "dest": "/src/main/resources/php/$1.php"
-    },
-    {
       "src": "/function/(.*)",
       "dest": "/src/main/resources/function/$1"
     },
