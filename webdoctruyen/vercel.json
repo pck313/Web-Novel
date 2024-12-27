@@ -1,6 +1,10 @@
 {
-  "rewrites": [
-    { "source": "/", "destination": "/src/main/resources/templates/index.html" }
+  "version": 2,
+  "builds": [
+    { "src": "src/main/resources/templates/*.html", "use": "@vercel/static" },
+    { "src": "src/main/resources/css/*.css", "use": "@vercel/static" }
+  ],
+  "routes": [
+    { "src": "/", "dest": "/src/main/resources/templates/index.html" }
   ]
-
 }
