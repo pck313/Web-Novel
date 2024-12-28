@@ -1,16 +1,5 @@
 {
-  "version": 2,
-  "builds": [
-    {
-      "src": "src/index.js",
-      "use": "@vercel/node"
-    }
-  ],
   "routes": [
-    {
-      "src": "/api/(.*)",
-      "dest": "src/index.js"
-    },
     {
       "src": "/books.html\\?story=(.*)",
       "dest": "/src/main/resources/templates/books.html"
@@ -22,6 +11,10 @@
     {
       "src": "/(.*)",
       "dest": "/src/main/resources/templates/$1"
+    }
+    {
+      "src": "/",
+      "dest": "/src/main/resources/templates/index.html"
     }
   ]
 }
