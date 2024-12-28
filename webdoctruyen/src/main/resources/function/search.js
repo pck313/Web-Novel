@@ -18,12 +18,12 @@ function searchImages() {
         const imageName = image.getAttribute('data-name').toLowerCase(); // Lấy kết quả từ ô tìm kiếm
         const normalizedImageName = removeDiacritics(imageName); // Bỏ các dấu
 
-        if (normalizedImsageName.includes(normalizedSearchInput)) {
+        if (normalizedImageName.includes(normalizedSearchInput)) {
             image.style.display = 'block';
 
             // Tạo liên kết cho ảnh tìm thấy
             const imageLink = document.createElement('a');
-            imageLink.href = image.querySelector('img').src;
+            imageLink.href = image.querySelector('a').href;
             imageLink.textContent = imageName;
 
             // Thêm liên kết vào container kết quả
@@ -39,11 +39,19 @@ function handleSearch(event) {
     // Kiểm tra xem phím Enter có được nhấn hoặc nút tìm kiếm có được nhấp không
     if (event.type === 'click' || event.key === 'Enter') {
         const searchInput = document.getElementById('search-input').value.toLowerCase();
-        localStorage.setItem('searchQuery', searchInput); // Lưu từ khóa tùm kiếm
-        window.location.href = 'search.html'; // Chuyển hướng đến trang khác
+        localStorage.setItem('searchQuery', searchInput); // Lưu từ khóa tìm kiếm
+        window.location.href = 'search.html'; // Chuyển hướng đến trang tìm kiếm
     }
 }
 
 // Gán sự kiện cho thanh tìm kiếm và nút tìm kiếm
 document.getElementById('search-input').addEventListener('keydown', handleSearch);
 document.querySelector('.search-button').addEventListener('click', handleSearch);
+
+document.addEventListener("DOMContentLoaded", function() {
+    const searchQuery = localStorage.getItem('searchQuery');
+    if (searchQuery) {
+        document.getElementById('search-input').value = searchQuery;
+        searchImages();
+    }
+});

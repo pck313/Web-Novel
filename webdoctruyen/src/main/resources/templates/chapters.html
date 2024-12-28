@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NovelWeb - Trang chủ</title>
+    <link rel="stylesheet" href="/css/header.css">
+    <link rel="stylesheet" href="/css/chapters.css">
+    <script src="/function/search.js" defer></script>
+    <script src="/function/chapters.js" defer></script>
+</head>
+<body>
+
+<div class="header" style="position:sticky;top:0;z-index:1;">
+    <span class="logo-text">NovelWeb</span>
+</div>
+
+<header class="top-bar" style="position:relative;top:0;">
+    <div class="container">
+        <div class="center">
+            <div class="search-bar">
+                <input type="text" id="search-input" placeholder="Tìm kiếm tên truyện..." class="search-input" oninput="searchImage()">
+                <button class="search-button" aria-label="Search"><img src="https://cdn.pixabay.com/photo/2015/12/08/17/38/magnifying-glass-1083373_640.png" alt="Search"></button>
+            </div>
+        </div>
+    </div>
+</header>
+
+<nav class="navigation-bar" style="position:relative;top:7px;">
+    <div class="container">
+        <a href="index.html"><img src="https://icon-library.com/images/home-icon-white/home-icon-white-7.jpg" alt="Trang chủ" class="home-icon"></a>
+        <a href="history.html">Lịch sử</a>
+        <a href="genres.html">Thể loại</a>
+    </div>
+</nav>
+
+<div class="title-frame">
+    <div class="title1" id="book-title-link" onclick="navigateToBook()">
+        <a id="book-title"></a>
+    </div>
+    <div class="title2" id="chapter-title-link" onclick="navigateToChapter()">
+        <a id="chapter-title"></a>
+    </div>
+</div>
+
+<div class="chapter-frame">
+    <div class="chapter-text" id="chapter-content"></div>
+</div>
+
+<iframe src="footer.html" style="border:0;width:100%;" title="Footer"></iframe>
+
+</body>
+</html>

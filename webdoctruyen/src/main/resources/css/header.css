@@ -138,7 +138,7 @@ body {
 }
 
 .navigation-bar a {
-    margin: 0 20px;
+    margin: 0 55px;
     border-radius: 5px;
     color: #fff;
     text-decoration: none;
@@ -148,6 +148,7 @@ body {
 }
 .navigation-bar a:hover {
     background-color: #ffac59;
+
 }
 
 .home-icon {

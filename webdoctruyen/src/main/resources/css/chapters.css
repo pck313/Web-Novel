@@ -1,0 +1,44 @@
+body, html {
+    background-color: #FCEAB5;
+}
+
+.chapter-frame {
+    background-color: #fff8e7;
+    border-radius: 10px;
+    width: 60%;
+    margin-top: 40px;
+}
+
+.chapter-text {
+    text-align: justify;
+    font-size: 20px;
+    margin: 55px 50px 55px 50px;
+    line-height: 1.6;
+}
+
+.title-frame {
+    position: relative;
+    background-color: #dc392f;
+    width: 100%;
+    margin-top: 20px;
+    padding: 20px;
+}
+
+.title1 {
+    font-size: 54px;
+    color: #fff;
+    margin: 20px 0 0 20%;
+    cursor: pointer;
+}
+
+.title2 {
+    font-size: 26px;
+    color: #fff;
+    margin: 6px 0 23px 20%;
+    border: none;
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+}
