@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function() {
-    fetch('https://raw.githubusercontent.com/pck313/DataWebNovel/refs/heads/main/data/index.json')
+    fetch('/data/index.json')
         .then(response => response.json())
         .then(data => {
             const contentDiv = document.querySelector('.content');

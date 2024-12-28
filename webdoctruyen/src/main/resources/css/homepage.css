@@ -95,3 +95,7 @@ body {
     margin: 20px 20px 20px 20px;
     width: 60%;
 }
+
+.comments-text a {
+    color: #EC3323;
+}

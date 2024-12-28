@@ -10,10 +10,9 @@
     <script src="/function/chapters.js" defer></script>
 </head>
 <body>
-<div class="header">
-    <div class="logo-text">
-        <a href="../templates/indexhtml">NovelWeb</a>
-    </div>
+
+<div class="header" style="position:sticky;top:0;z-index:1;">
+    <span class="logo-text">NovelWeb</span>
 </div>
 
 <header class="top-bar" style="position:relative;top:0;">
@@ -29,9 +28,9 @@
 
 <nav class="navigation-bar" style="position:relative;top:7px;">
     <div class="container">
-        <a href="../templates/index.html"><img src="https://icon-library.com/images/home-icon-white/home-icon-white-7.jpg" alt="Trang chủ" class="home-icon"></a>
-        <a href="../templates/history.html">Lịch sử</a>
-        <a href="../templates/genres.html">Thể loại</a>
+        <a href="index.html"><img src="https://icon-library.com/images/home-icon-white/home-icon-white-7.jpg" alt="Trang chủ" class="home-icon"></a>
+        <a href="history.html">Lịch sử</a>
+        <a href="genres.html">Thể loại</a>
     </div>
 </nav>
 
@@ -39,7 +38,7 @@
     <div class="title1" id="book-title-link" onclick="navigateToBook()">
         <a id="book-title"></a>
     </div>
-    <div class="title2" id="chapter-title-link" onclick="navigateToChapter()">
+    <div class="title2" id="chapter-title-link" onclick="navigateToPresentChapter()">
         <a id="chapter-title"></a>
     </div>
 </div>
@@ -54,7 +53,7 @@
     <button id="next-page" onclick="navigateToNextPage()">&#62;</button>
 </div>
 
-<iframe src="../templates/footer.html" style="border:0;width:100%;" title="Footer"></iframe>
+<iframe src="/templates/footer.html" style="border:0;width:100%;" title="Footer"></iframe>
 
 </body>
 </html>
