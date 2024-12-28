@@ -1,8 +1,9 @@
 {
   "routes": [
     { "src": "/", "dest": "/src/main/resources/templates/index.html" },
-    { "src": "/templates/(.*).html", "dest": "/src/main/resources/templates/$1.html" },
-    { "src": "/homepage/(.*).html", "dest": "/src/main/resources/homepage/$1.html" },
-    { "src": "/css/(.*)", "dest": "/src/main/resources/css/$1" }
+    { "src": "/templates/(.*)", "dest": "/src/main/resources/templates/$1" },
+    { "src": "/css/(.*)", "dest": "/src/main/resources/css/$1" },
+    { "src": "/function/(.*)", "dest": "/src/main/resources/function/$1" },
+    { "src": "/data/(.*)", "dest": "/src/main/resources/data/$1" }
   ]
 }

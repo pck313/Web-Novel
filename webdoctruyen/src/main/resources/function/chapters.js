@@ -37,3 +37,4 @@ function navigateToChapter() {
         window.location.href = url;
     }
 }
+

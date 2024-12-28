@@ -42,3 +42,42 @@ body, html {
 a {
     text-decoration: none;
 }
+
+.chapter-navigation {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.chapter-navigation button {
+    background-color: #dc392f;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 18px;
+    margin: 0 10px;
+    border-radius: 5px;
+}
+
+.chapter-navigation #chapter-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+    overflow-x: auto;
+}
+
+.chapter-navigation a {
+    margin: 0 10px;
+    color: #000;
+    text-decoration: none;
+    padding: 5px 10px;
+    background-color: #fff8e7;
+    border-radius: 5px;
+}
+
+.chapter-navigation a:hover {
+    background-color: #f0f0f0;
+}
