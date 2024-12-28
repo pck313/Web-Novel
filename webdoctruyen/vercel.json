@@ -2,7 +2,8 @@
   "routes": [
     { "src": "/", "dest": "/src/main/resources/templates/index.html" },
     { "src": "/css/(.*)", "dest": "/src/main/resources/css/$1" },
-    { "src": "/function/(.*)", "dest": "/src/main/resources/function/$1" }
+    { "src": "/function/(.*)", "dest": "/src/main/resources/function/$1" },
+    { "src": "/templates/(.*)", "dest": "/src/main/resources/templates/$1" }
   ]
 }
 
