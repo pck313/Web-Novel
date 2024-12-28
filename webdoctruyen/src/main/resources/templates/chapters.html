@@ -11,11 +11,13 @@
 </head>
 <body>
 
-<div class="header" style="position:sticky;top:0;z-index:1;">
-    <span class="logo-text">NovelWeb</span>
+<div class="header">
+    <div class="logo-text">
+        <a href="../templates/index.html">NovelWeb</a>
+    </div>
 </div>
 
-<header class="top-bar" style="position:relative;top:0;">
+<header class="top-bar">
     <div class="container">
         <div class="center">
             <div class="search-bar">
@@ -26,13 +28,22 @@
     </div>
 </header>
 
-<nav class="navigation-bar" style="position:relative;top:7px;">
+<nav class="navigation-bar">
     <div class="container">
-        <a href="index.html"><img src="https://icon-library.com/images/home-icon-white/home-icon-white-7.jpg" alt="Trang chủ" class="home-icon"></a>
-        <a href="history.html">Lịch sử</a>
-        <a href="genres.html">Thể loại</a>
+        <a href="../templates/index.html"><img src="https://icon-library.com/images/home-icon-white/home-icon-white-7.jpg" alt="Trang chủ" class="home-icon"></a>
+        <a href="../templates/history.html">Lịch sử</a>
+        <a href="../templates/genres.html">Thể loại</a>
     </div>
 </nav>
+
+<div class="account-link">
+    <img src="https://raw.githubusercontent.com/pck313/ImageWeb/refs/heads/main/userlogo.png" alt="User Icon">
+    Tài khoản
+    <div class="dropdown-content">
+        <a href="../templates/login.html">Đăng nhập</a>
+        <a href="../templates/register.html">Đăng ký</a>
+    </div>
+</div>
 
 <div class="title-frame">
     <div class="title1" id="book-title-link" onclick="navigateToBook()">

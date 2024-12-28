@@ -42,7 +42,7 @@ function navigateToPresentChapter() {
 function isFirstChapter(chapterUrl, chapters) {
     const currentChapterIndex = parseInt(chapterUrl.match(/chapter(\d+)/)[1], 10);
 
-    let smallestChapterIndex = currentChapterIndex;
+    let smallestChapterIndex = Infinity;
     chapters.forEach(chapter => {
         const chapterIndex = parseInt(chapter.url.match(/chapter(\d+)/)[1], 10);
         if (chapterIndex < smallestChapterIndex) {
@@ -51,6 +51,21 @@ function isFirstChapter(chapterUrl, chapters) {
     });
 
     return currentChapterIndex === smallestChapterIndex;
+}
+
+// Kiểm tra có phải chương cuối cùng trong danh sách
+function isLastChapter(chapterUrl, chapters) {
+    const currentChapterIndex = parseInt(chapterUrl.match(/chapter(\d+)/)[1], 10);
+
+    let largestChapterIndex = -Infinity;
+    chapters.forEach(chapter => {
+        const chapterIndex = parseInt(chapter.url.match(/chapter(\d+)/)[1], 10);
+        if (chapterIndex > largestChapterIndex) {
+            largestChapterIndex = chapterIndex;
+        }
+    });
+
+    return currentChapterIndex === largestChapterIndex;
 }
 
 function navigateToPreviousPage() {
@@ -81,24 +96,29 @@ function navigateToPreviousPage() {
 
 function navigateToNextPage() {
     const urlParams = new URLSearchParams(window.location.search);
-    const storyUrl = urlParams.get('story');
-    let chapterIndex = parseInt(urlParams.get('chapter'));
+    const storyUrl = urlParams.get('book');
+    const chapterUrl = urlParams.get('chapter');
+
+    const chapterPrefixMatch = chapterUrl.match(/^(\/story\d+\/chapter)/);
+    const chapterPrefix = chapterPrefixMatch ? chapterPrefixMatch[1] : '';
+    let chapterIndex = parseInt(chapterUrl.match(/chapter(\d+)/)[1], 10);
 
     fetch('/data/books.json')
         .then(response => response.json())
         .then(data => {
             const book = data.books.find(book => book.url === storyUrl);
             if (book) {
-                const maxChapterIndex = book.chapters.length;
-                if (chapterIndex < maxChapterIndex) {
+                const chapters = book.chapters;
+                if (!isLastChapter(chapterUrl, chapters)) {
                     chapterIndex += 1;
-                    window.location.href = `chapters.html?story=${storyUrl}&chapter=${chapterIndex}`;
+                    const newChapterUrl = `${chapterPrefix}${chapterIndex.toString().padStart(2, '0')}`;
+                    window.location.href = `chapters.html?book=${encodeURIComponent(storyUrl)}&chapter=${encodeURIComponent(newChapterUrl)}`;
                 } else {
-                    alert('Đây là chương cuối cùng');
+                    const nextButton = document.getElementById('next-page').disabled = true;
+                    nextButton.disabled = true;
                 }
             }
         })
-        .catch(error => console.error('Lỗi khi tải sách:', error));
 }
 
 document.addEventListener("DOMContentLoaded", function() {
