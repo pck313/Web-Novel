@@ -1,4 +1,6 @@
 {
+  "version": 2,
+  "builds": [],
   "routes": [
     {
       "src": "/books.html\\?story=(.*)",
@@ -11,7 +13,7 @@
     {
       "src": "/(.*)",
       "dest": "/src/main/resources/templates/$1"
-    }
+    },
     {
       "src": "/",
       "dest": "/src/main/resources/templates/index.html"
