@@ -73,7 +73,7 @@ function navigateToPreviousPage() {
                     const newChapterUrl = `${chapterPrefix}${chapterIndex.toString().padStart(2, '0')}`;
                     window.location.href = `chapters.html?book=${encodeURIComponent(storyUrl)}&chapter=${encodeURIComponent(newChapterUrl)}`;
                 } else {
-                    window.location.href = `books.html?book=${encodeURIComponent(storyUrl)}`;
+                    window.location.href = `books.html?story=${encodeURIComponent(storyUrl)}`;
                 }
             }
         })
