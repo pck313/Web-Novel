@@ -1,6 +1,7 @@
 {
   "routes": [
-    { "src": "/", "dest": "/src/main/resources/templates/index.html" }
+    { "src": "/", "dest": "/src/main/resources/templates/index.html" },
+    { "src": "/css/(.*)", "dest": "/src/main/resources/css/$1" }
   ]
 }
 
