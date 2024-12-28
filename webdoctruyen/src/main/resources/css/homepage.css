@@ -55,6 +55,7 @@ body {
 
 .chapter-frame {
     background-color: #fff8e7;
+    background-color: rgba(255, 255, 255, 0.4);
     border-radius: 10px;
     width: 80%;
     margin: 20px auto;

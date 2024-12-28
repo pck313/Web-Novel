@@ -3,17 +3,16 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Thể loại đọc truyện</title>
+  <title>NovelWeb - Thể loại</title>
   <link rel="stylesheet" href="/css/header.css">
-  <link rel="stylesheet" href="/css/index.css">
+  <link rel="stylesheet" href="/css/genres.css">
   <script src="/function/genres.js" defer></script>
 </head>
 <body>
-<div class="header">
+<div class="header" style="position:sticky;top:0;z-index:1;">
   <span class="logo-text">NovelWeb</span>
 </div>
-
-<header class="top-bar">
+<header class="top-bar" style="position:relative;top:0;">
   <div class="container">
     <div class="center">
       <div class="search-bar">
@@ -23,28 +22,16 @@
     </div>
   </div>
 </header>
-
-<nav class="navigation-bar">
+<nav class="navigation-bar" style="position:relative;top:7px;">
   <div class="container">
-    <a href="../templates/index.html"><img src="https://icon-library.com/images/home-icon-white/home-icon-white-7.jpg" alt="Trang chủ" class="home-icon"></a>
-    <a href="../templates/history.html">Lịch sử</a>
-    <a href="../templates/genres.html">Thể loại</a>
+    <a href="index.html"><img src="https://icon-library.com/images/home-icon-white/home-icon-white-7.jpg" alt="Trang chủ" class="home-icon"></a>
+    <a href="history.html">Lịch sử</a>
+    <a href="genres.html">Thể loại</a>
   </div>
 </nav>
-
-<div class="genre-selection">
-  <h1>Chọn thể loại truyện</h1>
-  <div class="genre-list" id="genre-list">
-    <!-- Các thể loại sẽ được thêm vào đây từ genres.js -->
-  </div>
-  <button onclick="searchByGenres()">Tìm kiếm</button>
+<div class="genres-list">
+  <!-- Các thể loại sẽ được liệt kê ở đây -->
 </div>
-
-<div class="content" id="stories-container">
-  <!-- Các truyện sẽ được thêm vào đây từ genres.js -->
-</div>
-
-<iframe src="../templates/footer.html" style="border:0;width:100%;" title="Footer"></iframe>
-
+<button class="search-genre-button" onclick="searchByGenres()">Tìm kiếm</button>
 </body>
 </html>
