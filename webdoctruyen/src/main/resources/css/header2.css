@@ -154,3 +154,8 @@ body {
     width: 40px;
     vertical-align: middle;
 }
+
+a {
+    text-decoration: none;
+    color: inherit;
+}

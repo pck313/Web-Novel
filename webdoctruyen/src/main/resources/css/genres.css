@@ -1,0 +1,36 @@
+body, html {
+    justify-content: center;
+    font-family: Arial, sans-serif;
+    background-color: #FCEAB5;
+}
+
+.genre-box {
+    width: 200px;
+    height: 40px;
+    margin: 10px;
+    display: flex;
+    justify-content: center;
+    background-color:  #fff8e7;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    color: black;
+}
+
+.group {
+    background-color: rgba(252, 161, 90, 0.3);
+    border-radius: 8px;
+    padding: 10px;
+    margin-bottom: 50px;
+}
+
+.group h2 {
+    margin-top: 20px;
+    color: #dc392f;
+    font-size: 25px;
+}
+
+.group-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
