@@ -31,3 +31,26 @@ document.addEventListener("DOMContentLoaded", function() {
         })
         .catch(error => console.error('Error loading book:', error));
 });
+
+document.addEventListener("DOMContentLoaded", function() {
+    const urlParams = new URLSearchParams(window.location.search);
+    const storyUrl = urlParams.get('book');
+
+    fetch('/data/books.json')
+        .then(response => response.json())
+        .then(data => {
+            const book = data.books.find(book => book.url === storyUrl);
+
+            if (book) {
+                const firstChapterUrl = book.chapters[0].url;
+
+                const button = document.getElementById('first-chapter-button');
+                button.addEventListener('click', function() {
+                    window.location.href = `chapters.html?book=${encodeURIComponent(book.url)}&chapter=${encodeURIComponent(firstChapterUrl)}`;
+                });
+            } else {
+                console.error('Không tìm thấy sách');
+            }
+        })
+        .catch(error => console.error('Lỗi khi tải sách:', error));
+});

@@ -72,7 +72,7 @@ body {
 
 .chapter-list ul {
     list-style: none;
-    padding: 0px;
+    padding: 0;
 }
 
 .chapter-list ul li {
@@ -98,4 +98,20 @@ body {
 
 .comments-text a {
     color: #EC3323;
+}
+
+#first-chapter-button {
+    position: relative;
+    cursor: pointer;
+    font-size: 30px;
+    border: none;
+    background: linear-gradient(to top, #EC3323, rgba(255, 0, 0, 0));
+    width: 252px;
+    height: 140px;
+    z-index: 0;
+    bottom: 144px;
+    color: #fff;
+    border-radius: 0 0 10px 10px;
+    font-family: 'Times New Roman', Arial, serif;
+    letter-spacing: 15px;
 }

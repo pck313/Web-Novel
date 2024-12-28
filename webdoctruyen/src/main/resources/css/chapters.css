@@ -14,6 +14,7 @@ body, html {
     font-size: 20px;
     margin: 55px 50px 55px 50px;
     line-height: 1.6;
+    font-family: 'Times New Roman', Arial, serif;
 }
 
 .title-frame {
@@ -86,3 +87,4 @@ button:disabled {
     background-color: gray;
     cursor: not-allowed;
 }
+
