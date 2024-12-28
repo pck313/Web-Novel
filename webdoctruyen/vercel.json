@@ -1,22 +1,6 @@
 {
-  "version": 2,
-  "builds": [],
   "routes": [
-    {
-      "src": "/books.html\\?story=(.*)",
-      "dest": "/src/main/resources/templates/books.html"
-    },
-    {
-      "src": "/css/(.*)",
-      "dest": "/src/main/resources/css/$1"
-    },
-    {
-      "src": "/(.*)",
-      "dest": "/src/main/resources/templates/$1"
-    },
-    {
-      "src": "/",
-      "dest": "/src/main/resources/templates/index.html"
-    }
+    { "src": "/", "dest": "/src/main/resources/templates/index.html" }
   ]
 }
+
