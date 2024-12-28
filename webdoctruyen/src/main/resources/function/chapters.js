@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", function() {
     const bookUrl = urlParams.get('book');
     const chapterUrl = urlParams.get('chapter');
 
-    fetch('https://raw.githubusercontent.com/pck313/DataWebNovel/refs/heads/main/data/books.json')
+    fetch('/data/books.json')
         .then(response => response.json())
         .then(data => {
             const book = data.books.find(book => book.url === bookUrl);

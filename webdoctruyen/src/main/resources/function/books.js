@@ -2,7 +2,7 @@ document.addEventListener("DOMContentLoaded", function() {
     const urlParams = new URLSearchParams(window.location.search);
     const storyUrl = urlParams.get('story');
 
-    fetch('https://raw.githubusercontent.com/pck313/DataWebNovel/refs/heads/main/data/books.json')
+    fetch('/data/books.json')
         .then(response => response.json())
         .then(data => {
             const book = data.books.find(book => book.url === storyUrl);
