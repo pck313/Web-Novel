@@ -1,57 +1,22 @@
-// Loại bỏ dấu trong chuỗi
-function removeDiacritics(str) {
-    return str.normalize('NFD').replace(/[\u0300-\u036f]/g, '');
-}
+// Hàm xử lý tìm kiếm khi người dùng nhấn Enter hoặc nhấn vào nút tìm kiếm
+function searchImage() {
+    const searchQuery = document.getElementById('search-input').value.trim();
 
-// Tìm kiếm theo tên
-function searchImages() {
-    const searchInput = document.getElementById('search-input').value.toLowerCase();
-    const normalizedSearchInput = removeDiacritics(searchInput);
-
-    const images = document.querySelectorAll('.story');
-    const resultContainer = document.getElementById('search-results'); // Container để hiển thị kết quả
-
-    // Xóa kết quả tìm kiếm cũ
-    resultContainer.innerHTML = '';
-
-    images.forEach(image => {
-        const imageName = image.getAttribute('data-name').toLowerCase(); // Lấy kết quả từ ô tìm kiếm
-        const normalizedImageName = removeDiacritics(imageName); // Bỏ các dấu
-
-        if (normalizedImageName.includes(normalizedSearchInput)) {
-            image.style.display = 'block';
-
-            // Tạo liên kết cho ảnh tìm thấy
-            const imageLink = document.createElement('a');
-            imageLink.href = image.querySelector('a').href;
-            imageLink.textContent = imageName;
-
-            // Thêm liên kết vào container kết quả
-            resultContainer.appendChild(imageLink);
-            resultContainer.appendChild(document.createElement('br')); // Dòng xuống
-        } else {
-            image.style.display = 'none';
-        }
-    });
-}
-
-function handleSearch(event) {
-    // Kiểm tra xem phím Enter có được nhấn hoặc nút tìm kiếm có được nhấp không
-    if (event.type === 'click' || event.key === 'Enter') {
-        const searchInput = document.getElementById('search-input').value.toLowerCase();
-        localStorage.setItem('searchQuery', searchInput); // Lưu từ khóa tìm kiếm
-        window.location.href = 'search.html'; // Chuyển hướng đến trang tìm kiếm
-    }
-}
-
-// Gán sự kiện cho thanh tìm kiếm và nút tìm kiếm
-document.getElementById('search-input').addEventListener('keydown', handleSearch);
-document.querySelector('.search-button').addEventListener('click', handleSearch);
-
-document.addEventListener("DOMContentLoaded", function() {
-    const searchQuery = localStorage.getItem('searchQuery');
+    // Kiểm tra nếu có ký tự nhập vào
     if (searchQuery) {
-        document.getElementById('search-input').value = searchQuery;
-        searchImages();
+        // Không tự động chuyển trang khi người dùng chỉ đang nhập
+        window.location.href = `search.html?query=${encodeURIComponent(searchQuery)}`;
     }
+}
+
+// Lắng nghe sự kiện khi người dùng nhấn Enter
+document.getElementById('search-input').addEventListener('keydown', function(event) {
+    if (event.key === 'Enter') {
+        searchImage();
+    }
+});
+
+// Lắng nghe sự kiện khi người dùng nhấn vào nút tìm kiếm
+document.querySelector('.search-button').addEventListener('click', function() {
+    searchImage();
 });
