@@ -16,7 +16,8 @@ document.addEventListener("DOMContentLoaded", function() {
                 document.getElementById('chapter-title').textContent = chapter.title;
                 document.getElementById('chapter-title-link').setAttribute('data-url', `chapters.html?book=${encodeURIComponent(book.url)}&chapter=${encodeURIComponent(chapter.url)}`);
 
-                document.getElementById('chapter-content').textContent = chapter.content;
+                const chapterContent = chapter.content ? chapter.content : "Đang cập nhật."
+                document.getElementById('chapter-content').textContent = chapterContent;
             } else {
                 console.error("Không tìm thấy dữ liệu sách hoặc chương.");
             }

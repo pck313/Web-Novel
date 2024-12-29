@@ -32,25 +32,21 @@ document.addEventListener("DOMContentLoaded", function() {
         .catch(error => console.error('Error loading book:', error));
 });
 
-document.addEventListener("DOMContentLoaded", function() {
+function navigateToFirstChapter() {
     const urlParams = new URLSearchParams(window.location.search);
-    const storyUrl = urlParams.get('book');
+    const storyUrl = urlParams.get('story');
 
     fetch('/data/books.json')
         .then(response => response.json())
         .then(data => {
             const book = data.books.find(book => book.url === storyUrl);
-
             if (book) {
-                const firstChapterUrl = book.chapters[0].url;
-
-                const button = document.getElementById('first-chapter-button');
-                button.addEventListener('click', function() {
-                    window.location.href = `chapters.html?book=${encodeURIComponent(book.url)}&chapter=${encodeURIComponent(firstChapterUrl)}`;
+                const firstChapter = book.chapters.reduce((min, chapter) => {
+                    const minIndex = parseInt(min.url.match(/chapter(\d+)/)[1], 10);
+                    const currentIndex = parseInt(chapter.url.match(/chapter(\d+)/)[1], 10);
+                    return minIndex < currentIndex ? min : chapter;
                 });
-            } else {
-                console.error('Không tìm thấy sách');
+                window.location.href = `chapters.html?book=${encodeURIComponent(storyUrl)}&chapter=${encodeURIComponent(firstChapter.url)}`;
             }
         })
-        .catch(error => console.error('Lỗi khi tải sách:', error));
-});
+}
