@@ -1,11 +1,12 @@
 <!DOCTYPE html>
-<html lang="vi">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lịch sử đọc truyện</title>
+    <title>NovelWeb - Trang chủ</title>
     <link rel="stylesheet" href="/css/header.css">
-    <link rel="stylesheet" href="/css/index.css">
+    <link rel="stylesheet" href="/css/history.css">
+    <script src="/function/history.js"></script>
     <script src="/function/search.js" defer></script>
 </head>
 <body>
@@ -28,41 +29,25 @@
 
 <nav class="navigation-bar">
     <div class="container">
-        <a href="index.html"><img src="https://icon-library.com/images/home-icon-white/home-icon-white-7.jpg" alt="Trang chủ" class="home-icon"></a>
+        <a href="../templates/index.html"><img src="https://icon-library.com/images/home-icon-white/home-icon-white-7.jpg" alt="Trang chủ" class="home-icon"></a>
         <a href="../templates/history.html">Lịch sử</a>
         <a href="../templates/genres.html">Thể loại</a>
     </div>
 </nav>
 
-<div class="content">
-    <h1>Lịch sử đọc truyện</h1>
-    <div id="history-container"></div>
+<div class="account-link">
+    <img src="https://raw.githubusercontent.com/pck313/ImageWeb/refs/heads/main/userlogo.png" alt="User Icon">
+    Tài khoản
+    <div class="dropdown-content">
+        <a href="../templates/login.html">Đăng nhập</a>
+        <a href="../templates/register.html">Đăng ký</a>
+    </div>
 </div>
 
-<script>
-    document.addEventListener('DOMContentLoaded', () => {
-        const historyContainer = document.getElementById('history-container');
-        const history = JSON.parse(localStorage.getItem('history')) || [];
-
-        if (history.length === 0) {
-            historyContainer.innerHTML = '<p>Không có lịch sử đọc truyện.</p>';
-        } else {
-            history.forEach(book => {
-                const bookElement = document.createElement('div');
-                bookElement.classList.add('history-item');
-                bookElement.innerHTML = `
-                <a href="books.html?story=${encodeURIComponent(book.url)}">
-                    <img src="${book.cover}" alt="${book.title}" style="width:100px;height:150px;">
-                    <p>${book.title}</p>
-                </a>
-            `;
-                historyContainer.appendChild(bookElement);
-            });
-        }
-    });
-</script>
+<div class="content">
+    <!--Các sách sẽ hiển thị ở đây-->
+</div>
 
 <iframe src="../templates/footer.html" style="border:0;width:100%;" title="Footer"></iframe>
-
 </body>
 </html>

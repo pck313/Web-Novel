@@ -1,62 +1,42 @@
-/* history.css */
+html, body {
+    overflow-x: hidden;
+    overflow-y: auto;
+}
 
 body {
+    background-color: #FCEAB5;
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f7f7f7;
 }
 
-.header {
-    background-color: #333;
-    color: white;
+.content {
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: repeat(5, 210px);
+    justify-content: center;
+    gap: 20px;
+    padding: 0 20px;
+}
+
+.story {
     text-align: center;
-    padding: 10px 0;
-    font-size: 24px;
+    font-family: 'Times New Roman', Arial, serif;
 }
 
-.history-content {
-    margin: 20px auto;
-    max-width: 800px;
-    padding: 20px;
-    background-color: white;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-h1 {
-    font-size: 28px;
-    text-align: center;
-    color: #333;
-}
-
-#history-list {
-    list-style-type: none;
-    padding: 0;
-}
-
-#history-list li {
-    display: flex;
-    align-items: center;
-    padding: 10px;
-    border-bottom: 1px solid #ddd;
-}
-
-#history-list li a {
+.story a {
     text-decoration: none;
-    color: #333;
-    flex-grow: 1;
-    display: flex;
-    align-items: center;
+    color: inherit;
 }
 
-.history-img {
-    width: 50px;
-    height: 70px;
-    object-fit: cover;
-    margin-right: 15px;
-    border-radius: 4px;
+.story img {
+    width: 210px;
+    height: 300px;
+    border-radius: 10px;
 }
 
-#history-list li:hover {
-    background-color: #f0f0f0;
+.story p {
+    margin-top: 6px;
+    font-size: 16px;
+    color: #000;
 }
