@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Books</title>
+  <link rel="stylesheet" href="/css/genresresult.css">
+</head>
+<body>
+<header>
+  <h1>Danh sách sách</h1>
+</header>
+
+<main id="book-list"></main>
+
+<script>
+  async function loadBooks() {
+    try {
+      // Lấy thể loại từ URL
+      const params = new URLSearchParams(window.location.search);
+      const genre = params.get('genre'); // Lấy thể loại từ tham số URL
+      if (!genre) return;
+
+      const response = await fetch('/data/books.json'); // Đường dẫn đến books.json
+      const { books } = await response.json(); // Parse JSON
+
+      const bookList = document.getElementById('book-list');
+      const filteredBooks = books.filter(book => book.genre.includes(genre)); // Lọc sách theo thể loại
+
+      if (filteredBooks.length === 0) {
+        bookList.innerHTML = `<p>Không tìm thấy sách thuộc thể loại "${genre}".</p>`;
+        return;
+      }
+
+      filteredBooks.forEach(book => {
+        const bookElement = document.createElement('div');
+        bookElement.className = 'book-item';
+        bookElement.innerHTML = `
+            <h2>${book.title}</h2>
+            <p><strong>Tác giả:</strong> ${book.author}</p>
+            <p><strong>Trạng thái:</strong> ${book.status}</p>
+            <a href="/templates/${book.url}.html">Đọc ngay</a>
+          `;
+        bookList.appendChild(bookElement);
+      });
+    } catch (error) {
+      console.error("Không thể tải sách:", error);
+    }
+  }
+
+  document.addEventListener("DOMContentLoaded", loadBooks);
+</script>
+</body>
+</html>

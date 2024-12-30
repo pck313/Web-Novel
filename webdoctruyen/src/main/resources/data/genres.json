@@ -1,22 +1,6 @@
 {
-  "genres": [
-    "Tiên Hiệp", "Huyền Huyễn", "Khoa Huyễn", "Võng Du", "Đô Thị", "Đồng Nhân", "Dã Sử",
-    "Cạnh Kỹ", "Huyền Nghi", "Kiếm Hiệp", "Kỳ Ảo", "Sắc", "Ngôn Tình", "Đam Mỹ", "Bách Hợp",
-    "Truyện Teen", "Light Novel", "Chư Thiên Vạn Giới", "Linh Khí Khôi Phục", "Tinh Tế Luyến Ca",
-    "Ma Pháp Huyễn Tình", "Dị Tộc Luyến Tính", "Hào Môn Thế Gia", "Tiên Lữ Kỳ Duyên", "Kinh Thương Chủng Điền",
-    "Cung Vi Trạch Đấu", "Thám Hiểm Sinh Tồn", "Trinh Thám Thôi Lý", "Kỳ Diệu Thế Giới", "Quỷ Bí Huyền Nghi",
-    "Thời Không Xuyên Toa", "Mạt Thế Nguy Cơ", "Tiến Hóa Biến Dị", "Tinh Tế Văn Minh", "Thế Giới Tương Lai",
-    "Cổ Võ Cơ Giáp", "Thể Dục Cạnh Kỹ", "Điện Tử Cạnh Kỹ", "Du Hí Dị Giới", "Hư Nghĩ Võng Du", "Lịch Sử Quan Trường",
-    "Dân Gian Truyền Thuyết", "Lịch Sử Quân Sự", "Giá Không Lịch Sử", "Thương Chiến Chức Tràng", "Ngu Nhạc Minh Tinh",
-    "Thanh Xuân Vườn Trường", "Đô Thị Dị Năng", "Đô Thị Sinh Hoạt", "Viễn Cổ Hồng Hoang", "Cổ Điển Tiên Hiệp",
-    "Thần Thoại Tu Chân", "Hiện Đại Tu Chân", "Huyễn Tưởng Tu Tiên", "Tu Chân Văn Minh", "Cổ Võ Tương Lai",
-    "Võ Hiệp Huyễn Tưởng", "Lịch Sử Thần Thoại", "Hắc Ám Huyễn Tưởng", "Hiện Đại Ma Pháp", "Tây Phương Kỳ Duyên",
-    "Cao Võ Thế Giới", "Vương Triều Tranh Bá", "Dị Thế Đại Lục", "Đông Phương Huyền Huyễn", "Sau Màn", "Phản Phái",
-    "Mỹ Thực", "Toàn Dân", "Điền Viên", "Ngự Thú", "Ngọt Sủng", "Xuyên Không", "Sảng Văn", "Vả Mặt", "Nữ Phụ",
-    "Xuyên Nhanh", "Xây Dựng Thế Lực", "Cá Mặn", "Marry Sue", "Vô Hạn", "Cơm Mềm", "Dưỡng Thành", "Phế Tài",
-    "Đàn Xuyên", "Xuyên Sách", "Chuyển Thế", "Cố Ngu", "Biến Thân", "Học Viện", "Hồng Lâu", "Trọng Sinh", "Khế Ước",
-    "Nữ Cường", "Xuyên Qua", "Vô Địch", "Phàm Nhân", "Tùy Thân", "Bàn Thờ", "Lão Gia", "Hệ Thống", "Ngược",
-    "Hài Hước", "Cổ Đại", "Đoản Văn", "Nhiệt Huyết", "Vô Sỉ", "Giảo Hoạt", "Ngu Ngốc", "Kiêu Ngạo", "Lãnh Khốc",
-    "Cơ Trí", "Nhẹ Nhàng", "Thiết Huyết", "Điềm Đạm"
-  ]
+  "the-loai": ["Tiên Hiệp", "Huyền Huyễn", "Khoa Huyễn", "Võng Du", "Đô Thị", "Đồng Nhân", "Dã Sử", "Cạnh Kỹ", "Huyền Nghi", "Kiếm Hiệp", "Kỳ Ảo", "Sắc", "Ngôn Tình", "Đam Mỹ", "Bách Hợp", "Truyện Teen", "Light Novel"],
+  "boi-canh-the-gioi": ["Chư Thiên Vạn Giới", "Linh Khí Khôi Phục", "Tinh Tế Luyến Ca", "Ma Pháp Huyễn Tình", "Dị Tộc Luyến Tính", "Hào Môn Thế Gia", "Tiên Lữ Kỳ Duyên", "Kinh Thương Chủng Điền", "Cung Vi Trạch Đấu", "Thám Hiểm Sinh Tồn", "Trinh Thám Thôi Lý", "Kỳ Diệu Thế Giới", "Quỷ Bí Huyền Nghi", "Thời Không Xuyên Toa", "Mạt Thế Nguy Cơ", "Tiến Hóa Biến Dị", "Tinh Tế Văn Minh", "Thế Giới Tương Lai", "Cổ Võ Cơ Giáp", "Thể Dục Cạnh Kỹ", "Điện Tử Cạnh Kỹ", "Du Hí Dị Giới", "Hư Nghĩ Võng Du", "Lịch Sử Quan Trường", "Dân Gian Truyền Thuyết", "Lịch Sử Quân Sự", "Giá Không Lịch Sử", "Thương Chiến Chức Tràng", "Ngu Nhạc Minh Tinh", "Thanh Xuân Vườn Trường", "Đô Thị Dị Năng", "Đô Thị Sinh Hoạt", "Viễn Cổ Hồng Hoang", "Cổ Điển Tiên Hiệp", "Thần Thoại Tu Chân", "Hiện Đại Tu Chân", "Huyễn Tưởng Tu Tiên", "Tu Chân Văn Minh", "Cổ Võ Tương Lai", "Võ Hiệp Huyễn Tưởng", "Lịch Sử Thần Thoại", "Hắc Ám Huyễn Tưởng", "Hiện Đại Ma Pháp", "Tây Phương Kỳ Duyên", "Cao Võ Thế Giới", "Vương Triều Tranh Bá", "Dị Thế Đại Lục"],
+  "luu-phai": ["Sau Màn", "Phản Phái", "Mỹ Thực", "Toàn Dân", "Điền Viên", "Ngự Thú", "Ngọt Sủng", "Xuyên Không", "Sảng Văn", "Vả Mặt", "Nữ Phụ", "Xuyên Nhanh", "Xây Dựng Thế Lực", "Cá Mặn", "Marry Sue", "Vô Hạn", "Cơm Mềm", "Dưỡng Thành", "Phế Tài", "Đàn Xuyên", "Xuyên Sách", "Chuyển Thế", "Cố Ngu", "Biến Thân", "Học Viện", "Hồng Lâu", "Trọng Sinh", "Khế Ước", "Nữ Cường", "Xuyên Qua", "Vô Địch", "Phàm Nhân", "Tùy Thân", "Bàn Thờ", "Lão Gia", "Hệ Thống", "Ngược", "Hài Hước", "Cổ Đại", "Đoản Văn"],
+  "tinh-cach-nhan-vat": ["Nhiệt Huyết", "Vô Sỉ", "Giảo Hoạt", "Ngu Ngốc", "Kiêu Ngạo", "Lãnh Khốc", "Cơ Trí", "Nhẹ Nhàng", "Thiết Huyết", "Điềm Đạm"]
 }
